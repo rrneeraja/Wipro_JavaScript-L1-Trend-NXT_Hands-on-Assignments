@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Conditional statement to find the sign of product</title>
+</head>
+<body>
+  <h2>Sample numbers: 10, -7, 0</h2>
+  <p style="font-size: 20px">Click the below button to get the output in alert box</p>
+  <button type="button" onclick="clickMe();">Click here</button>
+  <script>
+  function clickMe(){
+		var x=10;
+		var y=-7;
+		var z=0;
+		if (x>0 && y>0 && z>0)
+		{
+			alert("The sign is +");
+		}
+		else if (x<0 && y<0 && z<0)
+		{
+		  alert("The sign is +");
+		}
+		else if (x>0 && y<0 && z<0)
+		{
+		  alert("The sign is +");
+		}
+		else if (x<0 && y>0 && z<0)
+		{
+		  alert("The sign is +");
+		}
+		else
+		{
+		  alert("The sign is -");
+		}
+	}
+  </script>
+</body>
+</html>

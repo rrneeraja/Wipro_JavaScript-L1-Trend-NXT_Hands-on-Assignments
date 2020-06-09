@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Find the largest numbers</title>
+</head>
+<body>
+  <h2>Find the largest of five numbers and display the result
+	on the screen.<h2>
+  <h3>Sample numbers: -5, -2, -6, -8, -1</h3>
+  
+  <p id="demo" style= "font-size: 20px">Answer: </p>
+  <script>
+	a=-5;
+	b=-2;
+	c=-6;
+	d= -8;
+	f=-1;
+	if (a>b && a>c && a>d && a>f)
+	{
+		document.getElementById("demo").innerHTML += a;
+	}
+	else if (b>a && b>c && b>d && b>f)
+	{
+		document.getElementById("demo").innerHTML += b;
+	}
+	else if (c>a && c>b && c>d && c>f)
+	{
+		document.getElementById("demo").innerHTML += c;
+	}
+	else if (d>a && d>c && d>b && d>f)
+	{
+		document.getElementById("demo").innerHTML += d;
+	}
+	else
+	{
+		document.getElementById("demo").innerHTML += f;
+	}
+
+  </script>
+</body>
+</html>

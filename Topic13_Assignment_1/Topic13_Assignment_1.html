@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS nested for loop example</title>
+</head>
+<body>
+  <h2>Construct the following pattern, using a nested for loop.</h2>
+  <br>
+  <p style="font-size:30px">Pattern: </p>
+  <p id = "demo" style="font-size:20px"></p>
+  <script>
+	var x,y,chr="";
+	for(x=1; x <=6; x++)
+	{
+	   for (y=1; y < x; y++)
+	   {
+		  chr=chr+("*");        
+	   }
+	   document.getElementById("demo").innerHTML +=chr;
+	   document.getElementById("demo").innerHTML +="<br>";
+	   chr='';    
+	}
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+	  <title>Prime Number</title>
+	</head>
+	<body>
+
+	  <br>
+	  <h3>Enter value upto which you want to print prime number</h3>
+	  <input type="text" name="enter" class="enter" value="" id="dd"/> <!--Input field to enter values -->
+	  <input type="button" value="click" onclick="display();"/>
+	  <h2>Prime number between 1 and given number</h2> 
+	  <p id="demo" style="font-size:30px"></p> <!--Display the prime numbers -->
+	  <script>
+		<!-- Function to return the prime numbers -->
+		<!-- to display function -->
+		function prime(num) 
+		{
+			var j;
+			var flag=0;
+			for(j=2;j<num;j++)
+			{
+				if(num%j==0)
+					flag=1;
+			}
+			if(num==1)
+				return 0;
+			if(flag==1)
+				return 0;
+			if(flag==0)
+				return num;
+		}
+		<!-- Function to write the prime numbers to array -->
+		function display()
+		{
+			var i;
+			var arr = [];
+			for(i=1;i<dd.value;i++)
+			{
+				if(prime(i))
+					arr[arr.length] = " "+i+" ";
+			}
+			document.getElementById("demo").innerHTML = arr;
+		}
+	  </script>
+
+	</body>
+</html>
